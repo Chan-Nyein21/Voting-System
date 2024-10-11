@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile1</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        /* global color */
+        :root{
+            --main-color: #CF2D1E;
+            --text-color: #FFFFFF;
+        }
+
+        /* nav_bar start */
+        header{
+            background-color: var(--main-color);
+            width: 100%;
+            height: 80px;
+            position: sticky;
+            display: flex;
+            padding-top: 15px;
+        }
+
+        .logo{
+            margin-left: 180px;
+            display: flex;
+        }
+
+        .logo img{
+            width: 50px;
+            height: 50px;
+            border-radius: 180px;
+            text-align: center;
+        }
+
+        .logo span{
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 30px;
+            color: var(--text-color);
+        }
+
+        .nav-bar{
+            display: flex;
+            align-items: center;
+            column-gap: 2rem;
+            margin-left: 25rem;
+            margin-bottom: 10px;
+            /* background-color: black; */
+        }
+
+        .nav-bar li a{
+            color: var(--text-color);
+            font-size: 1.1rem;
+        }
+
+        .profile{
+            margin-left: 15rem;
+        }
+
+        .profile img{
+            width: 35px;
+            height: 35px;
+            border-radius: 180px;
+        }
+        /* nav_bar close */
+
+        /* side menu bar start */
+        .side-bar{
+            width: 10rem;
+            height: 31.6rem;
+            background-color: var(--main-color);
+        }
+
+        .side-bar ul{
+            /* text-align: center;
+            height: 20rem; */
+        }
+
+        .side-bar ul li{
+            /* padding-top: 2rem; */
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
+
+        .side-bar ul li a{
+            color: var(--text-color);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9rem;
+            font-weight: 520;
+            margin-left: 3rem;
+        }
+
+        .side-bar ul li:hover{
+            background-color: #F2EBDA;
+            width: 9rem;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .side-bar ul li:hover a{
+            color: black;
+            font-weight: 520;
+        }
+        /* side menu bar close */
+
+        /* welcome session start */
+        .content{
+            width: 500px;
+            background-color: #F2EBDA;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .content h1{
+            text-align: center;
+        }
+
+        .content span{
+            margin-left: 170px;
+            font-size: 1.1rem;
+        }
+
+        .content p{
+            text-align: justify;
+            padding: 10px 50px;
+            font-size: 15px;
+        }
+
+        .content button{
+            margin: 10px 200px;
+            text-align: center;
+            padding: 5px 30px;
+            border-radius: 15px;
+            border: none;
+            background-color: var(--main-color);
+            color: var(--text-color);
+        }
+        /* welcome session end */
+
+    </style>
+</head>
+<body>
+    
+    <!-- nav_bar start -->
+    <header>
+
+        <div class="logo">
+            <img src="/Image/M4U logo.JPG" alt=""> <span>Voting App</span>
+        </div>
+
+        <ul class="nav-bar">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="profile">
+            <img src="/Image/profile.jpg" alt="">
+        </div>
+
+    </header>
+    <!-- nav_bar close -->
+
+    <!-- side menu bar start -->
+
+    <div class="side-bar">
+
+        <ul>
+            <li><a href="#">Position</a></li>
+            <li><a href="#">Result</a></li>
+        </ul>
+
+    </div>
+
+    <!-- side menu bar close -->
+
+    <!-- welcome session start -->
+    <div class="content">
+
+        <h1>Welcome</h1>
+        <span>To Our Voting System</span><br><br>
+        <p>Thank you for participating in the election for the President of the International Student Association of Mae Fah Luang University. This system is designed to ensure a fair and transparent voting process. Your vote will help shape the future of our community. Please follow the instructions carefully and cast your vote.</p>
+
+        <button>Close</button>
+    </div>
+    <!-- welcome session close -->
+
+</body>
+</html>

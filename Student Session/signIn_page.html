@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        /* global color */
+        :root{
+            --main-color: #CF2D1E;
+            --text-color: #FFFFFF;
+        }
+
+        /* nav_bar start */
+        header{
+            background-color: var(--main-color);
+            width: 100%;
+            height: 80px;
+            position: sticky;
+            display: flex;
+            padding-top: 15px;
+        }
+
+        .logo{
+            margin-left: 180px;
+            display: flex;
+        }
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 180px;
+            text-align: center;
+        }
+
+        span{
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 30px;
+            color: var(--text-color);
+        }
+        /* nav_bar close */
+
+        /* sign_in form start */
+        .content{
+            background-color: #F2EBDA;
+            width: 550px;
+            margin: auto;
+            margin-top: 130px;
+            border-radius: 5px;
+            /* box-shadow: 5px 5px 5px 5px #888888; */
+        }
+
+        .title{
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #544216;
+        } 
+
+        .user-input{
+            width: 60%;
+            padding: 10px 15px;
+            margin: 10px 110px;
+            border-radius: 2px;
+            border: none;
+        }
+
+        button{
+            width: 89px;
+            height: 25px;
+            border: none;
+            background-color: var(--main-color);
+            color: var(--text-color);
+            border-radius: 7px;
+            margin: 20px 230px;
+        }
+        /* sign_in form close */
+
+    </style>
+</head>
+<body>
+    
+    <!-- nav_bar start -->
+    <header>
+
+        <div class="logo">
+            <img src="/Image/M4U logo.JPG" alt=""> <span>Voting App</span>
+        </div>
+
+    </header>
+    <!-- nav_bar close -->
+
+    <!-- sign_in form start -->
+    <div class="content">
+
+        <div class="title">Sign In</div>
+
+        <form action="">
+
+            <div class="input-group">
+                <input type="email" placeholder="Email" class="user-input">
+            </div>
+
+            <div class="input-group">
+                <input type="password" placeholder="Password" class="user-input">
+            </div>
+
+            <div class="button-group">
+                <button>Login</button>
+            </div>
+
+        </form>
+
+    </div>
+    <!-- sign_in form close -->
+
+</body>
+</html>
