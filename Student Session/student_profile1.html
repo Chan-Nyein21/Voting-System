@@ -44,32 +44,32 @@
     </nav>
     <!-- navbar end -->
 
-    <!-- welcoming message start -->
-    <div class="welcome">
-        <div class="container-lg w-50 text-center shadow-sm rounded-2" style="margin-top: 130px; background-color: #F2EBDA;">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 style="color: #544216;">Welcome</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4 style="color: #544216;" class="mb-4">To Our Voting System</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="text-muted">Thank you for participating in the election for the President of the International Student Association of Mae Fah Luang University. This system is designed to ensure a fair and transparent voting process. Your vote will help shape the future of our community. Please follow the instructions carefully and cast your vote.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-4 pb-4">
-                <div id="closeButton" class="btn text-white rounded-5 w-25" style="background-color: #CF2D1A; width: 100px;">
-                    Close   
-                </div>
-            </div>
-        </div>
+    <!-- Welcoming message start -->
+    <div id="welcomeMessage" class="welcome fade show">
+      <div class="container-lg w-50 text-center shadow-sm rounded-2" style="margin-top: 130px; background-color: #F2EBDA; transition: opacity 0.5s;">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h1 style="color: #544216;">Welcome</h1>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <h4 style="color: #544216;" class="mb-4">To Our Voting System</h4>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <p class="text-muted">Thank you for participating in the election for the President of the International Student Association of Mae Fah Luang University. This system is designed to ensure a fair and transparent voting process. Your vote will help shape the future of our community. Please follow the instructions carefully and cast your vote.</p>
+              </div>
+          </div>
+          <div class="row justify-content-center mt-4 pb-4">
+              <button id="closeButton" class="btn text-white rounded-5 w-25" style="background-color: #CF2D1A; width: 100px;">
+                  Close   
+              </button>
+          </div>
+      </div>
     </div>
-    <!-- welcoming message start -->
+    <!-- Welcoming message end -->
 
 </body>
 <!-- bootstrap link -->
@@ -77,7 +77,11 @@
 
 <script>
   document.getElementById("closeButton").addEventListener("click", function() {
-        document.querySelector(".welcome").style.display = "none";
+        const welcomeMessage = document.getElementById("welcomeMessage");
+        welcomeMessage.classList.remove("show");  // triggers fade-out effect
+        setTimeout(() => {
+            welcomeMessage.style.display = "none"; // hides after fade-out
+        }, 500); // 0.5s delay for fade-out
     });
 </script>
 
